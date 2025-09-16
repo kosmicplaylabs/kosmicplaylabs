@@ -294,8 +294,8 @@
   </div>
   <form class="contact-form">
     <h3>Get in Touch</h3>
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="user_name" placeholder="Your Name" required>
+    <input type="email" name="user_email" placeholder="Your Email" required>
     <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
     <button type="submit">Send</button>
   </form>
@@ -357,6 +357,39 @@
     menuToggle.classList.toggle('open');
   });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("CpNeScO6MjtoR3YTI"); // apna EmailJS public key yaha daalo
+  })();
+</script>
+  <script>
+document.getElementById("contact-form").addEventListener("submit", function(e) {
+  e.preventDefault();
 
+  emailjs.sendForm("service_703pauc", "template_b4xxpsn", this)
+    .then(() => {
+      Swal.fire({
+        title: "Message Sent!",
+        text: "We got your message, gamer 🎮🔥",
+        icon: "success",
+        background: "#0f172a",
+        color: "#38bdf8",
+        confirmButtonColor: "#22c55e",
+        confirmButtonText: "GG 🚀"
+      });
+      this.reset();
+    }, (error) => {
+      Swal.fire({
+        title: "Oops!",
+        text: "Something went wrong. Try again!",
+        icon: "error",
+        confirmButtonText: "Retry"
+      });
+    });
+});
+</script>
 </body>
 </html>
+
