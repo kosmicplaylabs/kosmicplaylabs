@@ -1,6 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kosmic Play Labs | IT Services</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("CpNeScO6MjtoR3YTI"); 
+  })();
+</script>
+</head>
+
+<body>
+  <!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Kosmic Play Labs</div>
+
+    <!-- Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Innovating Ideas into Reality</h1>
+      <p>We specialize in Game Development, Web Development, App Development, and Design Solutions.</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+<!-- Services Section -->
+<section id="services" class="services">
+  <h2 data-aos="fade-up">Our Services</h2>
+  <div class="service-cards">
+    <div class="card" data-aos="zoom-in" data-aos-delay="100">
+      <h3>🎮 Game Development</h3>
+      <p>Building immersive games using Unity with creativity and performance at core.</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="200">
+      <h3>💻 Web Development</h3>
+      <p>Modern, responsive, and secure websites tailored to your business needs.</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="300">
+      <h3>📱 App Development</h3>
+      <p>Custom mobile applications designed to deliver great user experiences.</p>
+    </div>
+    <div class="card" data-aos="zoom-in" data-aos-delay="400">
+      <h3>🎨 UI/UX Design</h3>
+      <p>Professional designs ensuring your brand stands out with stunning visuals.</p>
+    </div>
+  </div>
+</section>
+
+  <!-- About Section -->
+<section id="about" class="about">
+  <div class="about-content" data-aos="fade-up" data-aos-duration="1500">
+    <h2>About Us</h2>
+    <p>
+      At <strong>Kosmic Play Labs</strong>, we are a passionate team of developers, designers,
+      and innovators delivering cutting-edge IT solutions. From games to apps, we transform 
+      your ideas into digital products that leave a lasting impact.
+    </p>
+    <p>
+      Our mission is to combine creativity, technology, and strategy to create digital experiences
+      that not only look amazing but also perform flawlessly. We specialize in:
+    </p>
+    <ul>
+      <li>Game Development using Unity & Unreal Engine</li>
+      <li>Responsive Web Development</li>
+      <li>Mobile App Development (iOS & Android)</li>
+      <li>UI/UX & Graphic Design Solutions</li>
+    </ul>
+    <p>
+      We believe in collaboration, innovation, and quality, ensuring each project is delivered 
+      on time and exceeds expectations.
+    </p>
+    <a href="#contact" class="btn" data-aos="zoom-in" data-aos-delay="200">Get in Touch</a>
+  </div>
+</section>
+
+
+
+  <!-- Why Choose Us -->
+<section class="why-us">
+  <h2>Why Choose Us?</h2>
+  <div class="why-grid">
+    <div class="why-item">
+      <h3>🚀 Innovation</h3>
+      <p>We bring fresh, creative ideas to every project.</p>
+    </div>
+    <div class="why-item">
+      <h3>💡 Expertise</h3>
+      <p>Our team has hands-on experience in latest tech stacks.</p>
+    </div>
+    <div class="why-item">
+      <h3>🤝 Reliability</h3>
+      <p>We deliver projects on time with consistent quality.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<!-- Testimonials -->
+<section class="testimonials">
+  <h2 data-aos="fade-up">What Our Clients Say</h2>
+  <div class="testimonial-container" data-aos="fade-up" data-aos-delay="100">
+    <div class="testimonial-track">
+      <div class="testimonial-card">
+        <p>"Kosmic Play Labs built an amazing game for us. Smooth performance and fantastic design!"</p>
+        <span>- Sumedh Sonkamble</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"They developed our business website and mobile app – professional, responsive, and reliable."</p>
+        <span>- Jignesh Pipaliya</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Their UI/UX design elevated our app’s experience to a whole new level."</p>
+        <span>- Anshum Mishra</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Great team! Delivered our game on time with excellent quality."</p>
+        <span>- Nikki Tyagi</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"Professional, creative, and highly skilled – will definitely work with them again."</p>
+        <span>- Aashu Sharma</span>
+      </div>
+      <div class="testimonial-card">
+        <p>"From concept to delivery, the process was smooth and collaborative."</p>
+        <span>- Krishna Yadav</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="portfolio">
+    <h2>Our Work</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">Game Project</div>
+      <div class="portfolio-item">Web App</div>
+      <div class="portfolio-item">Mobile App</div>
+      <div class="portfolio-item">UI/UX Design</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <form id="contactForm" class="contact-form">
+    <input type="text" name="from_name" placeholder="Your Name" required />
+    <input type="email" name="from_email" placeholder="Your Email" required />
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <h3>✅ Message Sent Successfully!</h3>
+    <p>Thank you for reaching out. We’ll get back to you soon.</p>
+    <button onclick="closePopup()">Close</button>
+  </div>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Kosmic Play Labs | All Rights Reserved</p>
+  </footer>
+
+<div id="tsparticles"></div>
+
+
+  <script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+
+<script>
+const track = document.querySelector('.testimonial-track');
+const container = document.querySelector('.testimonial-container');
+
+// Clone all cards to make seamless scroll
+track.innerHTML += track.innerHTML;
+
+let speed = 0.5; // scrolling speed
+let pos = 0;
+
+function animate() {
+  pos += speed;
+  if (pos >= track.scrollWidth / 2) { // reset when first set of cards is gone
+    pos = 0;
+  }
+  track.style.transform = `translateX(-${pos}px)`;
+  requestAnimationFrame(animate);
+}
+
+// Pause on hover
+container.addEventListener('mouseenter', () => speed = 0);
+container.addEventListener('mouseleave', () => speed = 0.5);
+
+animate();
+</script>
+<script>
+  function toggleMenu() {
+    document.getElementById("navLinks").classList.toggle("active");
+  }
+
+  // Close menu on link click
+  const navLinks = document.querySelectorAll(".nav-links li a");
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      document.getElementById("navLinks").classList.remove("active");
+    });
+  });
+</script>
+
+
+<script>
+  const form = document.getElementById("contactForm");
+
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    emailjs.sendForm("service_703pauc", "template_b4xxpsn", this)
+      .then(() => {
+        showPopup();
+        form.reset();
+      }, (err) => {
+        alert("❌ Failed to send message. Please try again.");
+        console.error("EmailJS Error:", err);
+      });
+  });
+
+  function showPopup() {
+    document.getElementById("popup").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("popup").style.display = "none";
+  }
+</script> 
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KosmicPlayLabs</title>
@@ -392,7 +664,8 @@ document.getElementById("contact-form").addEventListener("submit", function(e) {
 
 </script>
 </body>
-</html>
+</html> -->
+
 
 
 
